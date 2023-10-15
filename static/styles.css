@@ -1,0 +1,142 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header and navigation */
+header {
+    background: linear-gradient(135deg, #FF9933, #FFFFFF, #138808);
+    color: #fff;
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+     text-align: left;
+    margin-left: 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+     transition: color 0.3s, font-size 0.3s;
+}
+.menu li:hover {
+    color: #007bff !important;
+    font-size: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('train1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 0;
+    top: 0;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.search {
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+}
+.search h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search input[type="text"],
+.search input[type="date"] {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.search button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.about, section.contact {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+
+        section.about:hover, section.contact:hover {
+            background: #f2f2f2;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }

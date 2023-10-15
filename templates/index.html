@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        .main {
+            width: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url("/static/train2.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 109vh;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0px;
+            padding: 0;
+        }
+
+        .container {
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, rgba(200, 70, 34, 0.3), rgba(200, 150, 7, 0.3)); /* Slightly transparent gradient background */
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(5, 8, 8, 8.1);
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 95px;
+    border: 2px solid rgba(255, 87, 34, 0.8); /* Slightly transparent border color */
+    color: #fff; /* Text color */
+}
+
+
+        h1 {
+            color: #0056b3;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 3px green solid;
+            border-radius: 30px;
+            color: red;
+            background-color: transparent;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+             font-size: 20px;
+        }
+         @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+         input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+        color: seashell;
+    animation: blink 1s infinite;
+    transition: color 0.10s ease-in-out;
+             font-family: Arial;
+             font-size: 20px;
+          /* Color when not in focus */
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .noewaccount {
+            text-align: left;
+            float: left;
+        }
+
+        .forgotpassword {
+            text-align: right;
+            float: right;
+        }
+        .noewaccount a {
+    color: seashell; /* Deep Blue */
+    text-decoration: underline; /* Add underlines for links */
+    font-weight: bold; /* Make the text bold */
+}
+
+.forgotpassword a {
+    color: seashell; /* Pink */
+    text-decoration: underline; /* Add underlines for links */
+    font-weight: bold; /* Make the text bold */
+}
+
+    {#    header css#}
+ /* Style the header */
+header {
+    background: linear-gradient(135deg, #FF9933, #FFFFFF, #138808);
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+     transition: color 0.3s, font-size 0.3s;
+}
+.menu li:hover {
+    color: #007bff !important;
+    font-size: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('../templates/train2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body class="main">
+<header>
+        <nav>
+            <div class="logo">
+                <h1>Train Booking</h1>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Book Tickets</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Login</h1>
+        <form method="POST">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required placeholder="enter username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required placeholder="enter password">
+            <br>
+            <input type="submit" value="Login">
+            <h5 class="noewaccount"><a href="https://www.irctc.co.in/nget/profile/user-registration">don't have an account?</a></h5>
+            <h5 class="forgotpassword"><a href="https://www.irctc.co.in/nget/profile/user-registration">forget password?</a></h5>
+        </form>
+    </div>
+</body>
+</html>
